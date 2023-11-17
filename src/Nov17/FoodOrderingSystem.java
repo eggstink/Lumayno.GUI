@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Anything4 extends JFrame{
+public class FoodOrderingSystem extends JFrame{
     private JCheckBox cPizza;
     private JCheckBox cBurger;
     private JRadioButton rbNone;
@@ -26,7 +26,7 @@ public class Anything4 extends JFrame{
     private JLabel php;
     private JLabel php5;
 
-    public Anything4(){
+    public FoodOrderingSystem(){
        btnOrder.addActionListener(new ActionListener() {
            @Override
 
@@ -68,7 +68,7 @@ public class Anything4 extends JFrame{
    }
 
     public static void main(String[] args) {
-        Anything4 app = new Anything4();
+        FoodOrderingSystem app = new FoodOrderingSystem();
         app.setContentPane(app.foodPanel);
         app.setSize(1000,400);
         app.setDefaultCloseOperation(EXIT_ON_CLOSE);

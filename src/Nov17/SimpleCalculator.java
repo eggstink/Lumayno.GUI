@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Anything3 extends JFrame{
+public class SimpleCalculator extends JFrame{
     private JTextField tfNumber1;
     private JComboBox cbOperations;
     private JTextField tfNumber2;
@@ -12,7 +12,7 @@ public class Anything3 extends JFrame{
     private JPanel calcPanel;
     private JLabel lblResult;
 
-    public Anything3(){
+    public SimpleCalculator(){
         btnCompute.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -43,7 +43,7 @@ public class Anything3 extends JFrame{
     }
 
     public static void main(String[] args) {
-        Anything3 app = new Anything3();
+        SimpleCalculator app = new SimpleCalculator();
         app.setContentPane(app.calcPanel);
         app.setSize(1000,400);
         app.setDefaultCloseOperation(EXIT_ON_CLOSE);

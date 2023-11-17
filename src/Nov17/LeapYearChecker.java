@@ -5,12 +5,12 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Anything2 extends JFrame{
+public class LeapYearChecker extends JFrame{
     private JPanel panel1;
     private JTextField tfYear;
     private JButton btnCheckYear;
 
-    Anything2(){
+    LeapYearChecker(){
         btnCheckYear.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -32,7 +32,7 @@ public class Anything2 extends JFrame{
     }
 
     public static void main(String[] args) {
-        Anything2 app = new Anything2();
+        LeapYearChecker app = new LeapYearChecker();
         app.setContentPane(app.panel1);
         app.setSize(1000,400);
         app.setDefaultCloseOperation(EXIT_ON_CLOSE);
